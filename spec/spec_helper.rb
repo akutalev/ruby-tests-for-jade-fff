@@ -14,7 +14,7 @@ RSpec.configure do |config|
   config.before :all do
     @headless = Headless.new
     @headless.start
-    @browser = Watir::Browser.new ENV['browser']
+    @browser = Watir::Browser.new
   end
 
   # Close that browser after each example.
