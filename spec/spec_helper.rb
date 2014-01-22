@@ -14,9 +14,7 @@ RSpec.configure do |config|
   config.before :all do
     @headless = Headless.new
     @headless.start
-    #@browser = Watir::Browser.new :chrome
-    @browser = Watir::Browser.new :firefox
-    #@browser = Watir::Browser.new :ie
+    @browser = Watir::Browser.new ENV['browser']
   end
 
   # Close that browser after each example.
