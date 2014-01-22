@@ -9,6 +9,7 @@ GEM
     commonwatir (4.0.0)
     diff-lcs (1.2.5)
     ffi (1.9.3)
+    headless (1.0.1)
     multi_json (1.8.4)
     rspec (2.14.1)
       rspec-core (~> 2.14.0)
@@ -39,4 +40,5 @@ PLATFORMS
 
 DEPENDENCIES
   ci_reporter (~> 1.8.0)
+  headless (~> 1.0.1)
   watir-rspec

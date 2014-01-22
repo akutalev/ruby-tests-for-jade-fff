@@ -2,6 +2,7 @@
 # Configuration for watir-rspec
 require "watir/rspec"
 require "watir-webdriver"
+require 'headless'
 
 RSpec.configure do |config|
   # Use Watir::RSpec::HtmlFormatter to get links to the screenshots, html and
@@ -11,8 +12,10 @@ RSpec.configure do |config|
 
   # Open up the browser for each example.
   config.before :all do
-    @browser = Watir::Browser.new :chrome
-    #@browser = Watir::Browser.new :firefox
+    @headless = Headless.new
+    @headless.start
+    #@browser = Watir::Browser.new :chrome
+    @browser = Watir::Browser.new :firefox
     #@browser = Watir::Browser.new :ie
   end
 
