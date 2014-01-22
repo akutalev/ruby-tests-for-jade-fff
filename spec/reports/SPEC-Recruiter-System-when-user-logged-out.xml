@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Recruiter System when user logged out" tests="1" time="0.781485142" failures="0" errors="0" skipped="0">
+  <testcase name="Recruiter System when user logged out signs him off and redirect to login pages" time="0.780854298">
+  </testcase>
+  <system-out>
+  </system-out>
+  <system-err>
+  </system-err>
+</testsuite>

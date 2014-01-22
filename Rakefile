@@ -1,7 +1,19 @@
-#!/usr/bin/env rake
+# -*- coding: utf-8 -*-
 
-require 'ci/reporter/rake/rspec'     # use this if you're using RSpec
-#require 'ci/reporter/rake/cucumber'  # use this if you're using Cucumber
-#require 'ci/reporter/rake/spinach'   # use this if you're using Spinach
-#require 'ci/reporter/rake/test_unit' # use this if you're using Test::Unit
-#require 'ci/reporter/rake/minitest'  # use this if you're using Ruby 1.9 or minitest
+require "rubygems"
+require "rake"
+require "rspec/core/rake_task"
+require "rspec/core/version"
+gem 'ci_reporter'
+require 'ci/reporter/rake/rspec'
+
+TEST_HOME = File.expand_path(File.dirname(__FILE__))
+puts TEST_HOME
+desc "Run all selenium"
+RSpec::Core::RakeTask.new(:spec) do |t|
+  t.rspec_opts = %w[--color]
+  t.verbose = false
+  t.pattern = "#{TEST_HOME}/spec/**/*_spec.rb"
+end
+
+task :default => [:spec]
