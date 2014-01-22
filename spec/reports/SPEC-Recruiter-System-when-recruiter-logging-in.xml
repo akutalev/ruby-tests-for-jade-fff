@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Recruiter System when recruiter logging in" tests="1" time="2.067548198" failures="0" errors="0" skipped="0">
-  <testcase name="Recruiter System when recruiter logging in should base matcher" time="2.066587466">
-  </testcase>
-  <system-out>
-  </system-out>
-  <system-err>
-  </system-err>
-</testsuite>

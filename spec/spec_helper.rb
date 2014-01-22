@@ -1,6 +1,7 @@
 
 # Configuration for watir-rspec
 require "watir/rspec"
+require "watir-webdriver"
 
 RSpec.configure do |config|
   # Use Watir::RSpec::HtmlFormatter to get links to the screenshots, html and

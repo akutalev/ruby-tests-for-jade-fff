@@ -30,7 +30,7 @@ describe 'Recruiter System' do
 
   context 'when user logged out' do
     it 'signs him off and redirect to login pages' do
-      a(id: 'menu').should be_present
+      a(id: 'menud').should be_present
       a(id: 'menu').click
       b = button(name: 'submit')
       b.should be_present

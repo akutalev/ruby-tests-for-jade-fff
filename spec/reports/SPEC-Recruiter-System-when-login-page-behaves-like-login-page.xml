@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Recruiter System when login page behaves like login page" tests="1" time="3.009996266" failures="0" errors="0" skipped="0">
-  <testcase name="Recruiter System when login page behaves like login page should base matcher" time="3.009556298">
-  </testcase>
-  <system-out>
-  </system-out>
-  <system-err>
-  </system-err>
-</testsuite>
