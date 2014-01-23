@@ -15,9 +15,9 @@ describe 'Recruiter System' do
     end
   end
 
-  context 'when login page' do
-    it_behaves_like 'login page'
-  end
+  #context 'when login page' do
+  #  it_behaves_like 'login page'
+  #end
 
   context 'when recruiter logging in' do
     it do
@@ -39,3 +39,5 @@ describe 'Recruiter System' do
     it_behaves_like 'login page'
   end
 end
+
+
