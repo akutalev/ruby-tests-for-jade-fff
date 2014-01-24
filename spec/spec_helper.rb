@@ -10,8 +10,8 @@ RSpec.configure do |config|
 
   # Open up the browser for each example.
   config.before :all do
-    @headless = Headless.new
-    @headless.start
+    #@headless = Headless.new
+    #@headless.start
     @browser = Watir::Browser.new (ENV['browser'] || :ff)
   end
 
