@@ -4,7 +4,7 @@ require "rubygems"
 require "rake"
 require "rspec/core/rake_task"
 require "rspec/core/version"
-gem 'ci_reporter'
+gem 'ci_reporter', :git => 'git://github.com/nicksieger/ci_reporter.git'
 require 'ci/reporter/rake/rspec'
 
 TEST_HOME = File.expand_path(File.dirname(__FILE__))
