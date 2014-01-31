@@ -11,7 +11,7 @@ describe 'Recruiter bids to vacancy' do
   context "when user bids to active vacancy" do
     it "then employer should receive bid in his 'active bids' page."  do
       user_signs_in_as_recruiter()
-      user_selects_menu_item('Profile').click
+      user_selects_menu_item('Профиль').click
     end
   end
 end
